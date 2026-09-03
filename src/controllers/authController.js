@@ -51,7 +51,8 @@ export async function register(req, res) {
       usuario: {
         id: usuario.id,
         name: usuario.name,
-        email: usuario.email
+        email: usuario.email,
+        password: usuario.senhaHash
       }
     });
   } catch (error) {
